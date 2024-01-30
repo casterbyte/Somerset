@@ -51,6 +51,8 @@ vi rc.local
 
 udhcpc -i br-lan
 echo "nameserver 8.8.8.8" > /etc/resolv.conf
+
+exit 0
 ```
 
 
@@ -74,7 +76,7 @@ set VMMEMORY=512
 set VMCPUS=1
 set VMDISK=C:\openwrt\openwrt.vdi
 set VMNIC1=bridged
-set VMADAPTER1=" " # Specify here the interface of the real Windows operating system
+set VMADAPTER1=" " # Specify here the interface of the real Windows
 set VMPROMISC1=allow-all
 
 "C:\Program Files\Oracle\VirtualBox\VBoxManage.exe" createvm --name "%VMNAME%" --register
