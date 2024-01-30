@@ -27,7 +27,7 @@ C:\Program Files\Oracle\VirtualBox>vboxmanage.exe modifyhd --resize 512 "C:\open
 0%...10%...20%...30%...40%...50%...60%...70%...80%...90%...100%
 ```
 
-![](/poc-images\research-scheme.jpg)
+![](/poc-images/research-scheme.jpg)
 
 > Research Scheme
 
