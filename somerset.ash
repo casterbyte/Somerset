@@ -2,7 +2,7 @@
 
 # banner
 echo "Somerset: Offensive OpenWRT router for Windows Pivoting"
-echo "Author: Cursed, <cursed@exploit.org>"
+echo "Author: Caster, <caster@exploit.org>"
 
 
 # install dependencies
