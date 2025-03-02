@@ -1,10 +1,14 @@
-# Somerset: Offensive Router for Windows Pivoting
+# Somerset: Offensive Router for Windows Pivoting (Experimental)
 
 Somerset - is a small **ash** script to prepare OpenWRT for an L2 VPN SSH tunnel for post-exploitation against Windows
 
 ![](/poc-images/somerset-cover.png)
 
 > Cover
+
+# Disclaimer
+
+All methods and techniques described in this repo are for educational purposes only. The author are not responsible for misuse of this knowledge. Remember that this knowledge should only be used for ethical purposes. Don't risk your life and be careful.
 
 # Scenario
 
